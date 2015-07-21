@@ -10,8 +10,15 @@
 <body > 
  <section>
 	<h1>${message}</h1>	
-	<p>The future value of investment amount of ${fv.amount} dollars in ${fv.years} year(s) is : 
-	${fv.futureValue}.</p>
+	<label>Monthly investment amount: ${fv.amount} dollars</label><br>
+	<label>Years: ${fv.years} </label><br>
+	<label>Rate: ${rate}% compounded monthly </label><br>
+	<label>Future Value = ${fv.futureValue}</label><br>
+	<br><br>
+	<form action="index.jsp">
+    <input type="submit" value="Home">
+    <br><br>
+</form>
  </section>
 </body>
 </html>

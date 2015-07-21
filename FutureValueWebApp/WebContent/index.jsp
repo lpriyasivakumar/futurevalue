@@ -10,6 +10,7 @@
     <body>
         <section>
             <h1>Future Value Calculator</h1>
+            <label style= "font-style:italic; color:red;font-family:serif">${error_message}</label>
             <form action="displayResults" method="post">
             	<img src="images/calc.jpg" alt="Calculator"/>
             	<h1>Welcome to the Future Value Calculator!</h1>
@@ -18,7 +19,7 @@
                 <label>Monthly Investment Amount:</label>				
                 <input type="text" name="investment" placeholder="Enter Investment Amount"
                        value=""/><br><br>
-                 <label>Interest Rate per annum (Compounded monthly): </label><br><br>
+                 <label>Interest Rate per annum (Compounded monthly): </label>
                  <input type="text" name="rate" placeholder="Enter Interest Rate"
                        value=""/><br><br>
                  <label>Number of years:</label>                 
@@ -28,8 +29,7 @@
 					<option value=3>Three</option>					
 					<option value=4>Four</option>
 				</select>
-				<br><br>
-				<label>&nbsp;</label>                
+				<br><br>				               
 				<input type="submit" value="Calculate" id="submit">
 				<br>
             </form>
